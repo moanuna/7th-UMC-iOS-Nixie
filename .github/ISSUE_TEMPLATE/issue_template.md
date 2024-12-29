@@ -1,26 +1,22 @@
----
-name: "\U0001F4C1 Feature Request / Task"
-about: 새로운 기능 추가 또는 작업
-title: "[Feature] 작업 제목"
-labels: enhancement
-assignees: ''
-
----
-
-## 작업 개요
-- 어떤 작업인지 간단히 설명해주세요.
-
-## 작업 상세 내용
-- [ ] 작업 1
-- [ ] 작업 2
-- [ ] 작업 3
-
-## 브랜치
-- 작업할 브랜치 이름: `feature/작업-내용`
-
-## 참고 자료
-- 관련 이슈 또는 자료를 링크로 첨부해주세요.
-
-## 추가 사항
-- 자유롭게 추가 정보를 입력하세요.
-
+name: "✨ Feature"
+description: "새로운 기능 추가"
+labels: ["feature"]
+body:
+  - type: textarea
+    attributes:
+      label: 📄 설명
+      description: 새로운 기능에 대한 설명을 작성해 주세요.
+      placeholder: 자세히 적을수록 좋습니다!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 내용
+      description: 할 일을 체크박스 형태로 작성해주세요.
+      placeholder: 최대한 세분화 해서 적어주세요!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🙋🏻 참고 자료
+      description: 참고 자료가 있다면 작성해 주세요.
